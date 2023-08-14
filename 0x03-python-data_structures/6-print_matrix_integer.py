@@ -8,10 +8,5 @@ def print_matrix_integer(matrix=[[]]):
                     print(" ", end='')
                 else:
                     print("")
-matrix = [
-    [1],
-    [4],
-    [7]
-]
-
-print_matrix_integer()
+    else:
+        print()
