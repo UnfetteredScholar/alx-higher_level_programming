@@ -11,7 +11,7 @@ def roman_to_int(roman_string):
             '_': 0  # Used to denote end of string
             }
     res = 0
-    if roman_string is None or roman_string == "":
+    if roman_string is None or type(roman_string) is not str or roman_string == "":
         return 0
 
     roman = roman_string + '_'
