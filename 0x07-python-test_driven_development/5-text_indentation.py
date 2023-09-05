@@ -16,8 +16,8 @@ def text_indentation(text):
         raise TypeError('text must be a string')
 
     text1 = text.replace('.', '.\3')
-    text1 = text1.replace('?', '?\3');
-    text1 = text1.replace(':', ':\3');
+    text1 = text1.replace('?', '?\3')
+    text1 = text1.replace(':', ':\3')
 
     lines = text1.split('\3')
 
