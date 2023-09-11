@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines the MyList class"""
 
+
 class MyList(list):
     """Custom list class definition"""
 
