@@ -23,7 +23,10 @@ class Student:
         """
         if hasattr(self, "__dict__"):
             jdict = self.__dict__.copy()
-            if attrs is list:
+            if type(attrs) is list:
+                for item in attrs:
+                    if type(item) is not str:
+                        return jdict
                 keys = []
                 for key in jdict.keys():
                     keys.append(key)
@@ -40,6 +43,5 @@ class Student:
         Args:
             json (dict): the json dictionary
         """
-        self.first_name = json['first_name']
-        self.last_name = json['last_name']
-        self.age = json['age']
+        for atr in json:
+            self.__dict__[atr] = json[atr]
