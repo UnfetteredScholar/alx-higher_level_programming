@@ -23,7 +23,7 @@ class Student:
         """
         if hasattr(self, "__dict__"):
             jdict = self.__dict__.copy()
-            if attrs is not None:
+            if attrs is list:
                 keys = []
                 for key in jdict.keys():
                     keys.append(key)
