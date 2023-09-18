@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#base.py
 """Defines the Base class"""
 
 import json
