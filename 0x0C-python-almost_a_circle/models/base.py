@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+#base.py
+"""Defines the Base class"""
+
 import json
 import csv
 import os.path
-"""Defines the Base class"""
 
 
 class Base:
