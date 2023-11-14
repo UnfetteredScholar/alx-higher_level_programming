@@ -10,10 +10,10 @@ module.exports = class Rectangle {
     }
   }
 
-  print () {
+  print (c = 'X') {
     let line = '';
     for (let i = 0; i < this.width; i++) {
-      line += 'X';
+      line += c;
     }
     for (let i = 0; i < this.height; i++) {
       console.log(line);
