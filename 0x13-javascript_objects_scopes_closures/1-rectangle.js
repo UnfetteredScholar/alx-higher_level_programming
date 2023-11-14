@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
+// Defines a Rectangle class with width and height attributes.
+
 module.exports = class Rectangle {
-  width;
-  height;
   constructor (w, h) {
     this.width = w;
     this.height = h;
