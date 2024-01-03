@@ -3,9 +3,10 @@
 const fs = require('node:fs');
 const filename = process.argv[2];
 
-fs.readFile(filename, 'utf8', (err, f) => {
+fs.readFile(filename, 'utf8', (err, data) => {
   if (err) {
-    return console.error(err);
+    console.error(err);
+  } else {
+    console.log(data);
   }
-  console.log(f);
 });
